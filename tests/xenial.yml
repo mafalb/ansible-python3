@@ -1,0 +1,18 @@
+# vim: set ft=yaml ts=2:
+---
+- hosts: cihost
+  roles:
+    - role: mafalb.ansible_ci/node/docker
+      container_name: xenial
+      volumes: mafalb.ansible_ci/node/docker
+      image_name: xenial
+      src: ubuntu-16-python3
+      member_of_groups:
+        - testnodes_xenial
+        - python3_hosts
+
+- name: xenial with python3
+  hosts: testnodes_xenial
+  roles:
+    - role: mafalb.python3
+...

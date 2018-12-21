@@ -1,0 +1,18 @@
+# vi: set ft=yaml ts=2:
+---
+
+- name: assertions
+  assert:
+    that:
+      - python3_package_prefix is defined
+
+- debug: var=python3_package_prefix
+  tags:
+    - never
+    - debug
+
+- name: python is installed
+  package:
+    name: "{{ python_package_prefix }}"
+    state: present
+...

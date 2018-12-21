@@ -1,0 +1,10 @@
+# vim: set ft=yaml ts=2:
+---
+
+# https://fedoraproject.org/wiki/FinalizingFedoraSwitchtoPython3
+# loosely related to https://www.python.org/dev/peps/pep-0394/
+# you can override this in OS specific vars files
+#
+python3_package_prefix: python3
+python3_pip_package: python3-pip
+...

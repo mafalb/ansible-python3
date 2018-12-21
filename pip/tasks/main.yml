@@ -1,0 +1,25 @@
+# vi: set ft=yaml ts=2:
+---
+
+- name: assertions
+  assert:
+    that:
+      - python3_package_prefix is defined
+
+- debug: var=python3_package_prefix
+  tags:
+    - never
+    - debug
+
+- name: pip is installed
+  package:
+    name: "{{ python3_pip_package }}"
+    state: present
+
+- name: upgrade pip
+  when: python3_pip_upgrade
+  pip:
+    name: pip
+    executable: pip3
+    extra_args: --upgrade
+...
