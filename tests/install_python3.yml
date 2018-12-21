@@ -19,14 +19,6 @@
       member_of_groups:
         - install_python3
 
-    - role: mafalb.ansible_ci/node/docker
-      container_name: install_python3_centos7
-      volumes: mafalb.ansible_ci/node/docker
-      image_name: centos7
-      src: centos-7
-      member_of_groups:
-        - install_python3
-
 - hosts: install_python3
   roles:
     - role: mafalb.python3/python
