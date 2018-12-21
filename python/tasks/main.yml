@@ -13,6 +13,6 @@
 
 - name: python is installed
   package:
-    name: "{{ python_package_prefix }}"
+    name: "{{ python3_package_prefix }}"
     state: present
 ...
