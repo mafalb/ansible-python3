@@ -25,8 +25,8 @@
 
   tasks:
     - name: get pip version
+      command: python3 -m pip --version
       check_mode: false
-      command: "python3 -m pip --version"
       register: _pip3
 
     - name: debug _pip3
