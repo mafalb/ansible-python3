@@ -1,4 +1,4 @@
-# An ansible role for installing pip [![Build Status](https://travis-ci.com/mafalb/ansible-python3.svg?branch=master)](https://travis-ci.com/mafalb/ansible-python3)
+# An ansible role for installing python3 [![Build Status](https://travis-ci.com/mafalb/ansible-python3.svg?branch=master)](https://travis-ci.com/mafalb/ansible-python3)
 
 ## Basic Usage
 
